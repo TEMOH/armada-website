@@ -85,7 +85,7 @@
   color-scheme: dark;
   --bs-body-color: #EDEDED;
   --bs-body-bg: #161616;
-  --bs-primary: #D16527;
+  --bs-primary: #FFC61B;
   --bs-secondary: #EDEDED;
   --bs-dark: #161616;
   --bs-gray-dark: #121212;
@@ -99,7 +99,7 @@
 [data-bs-theme=light] {
   --bs-body-color: #161616;
   --bs-body-bg: #F9f9f9;
-  --bs-primary: #D16527;
+  --bs-primary: #FFC61B;
   --bs-secondary: #161616;
   --bs-dark: #161616;
   --bs-gray-dark: #FFFFFF;
