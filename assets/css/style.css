@@ -73,9 +73,20 @@
 ================================================== */
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'Prospac';
+  src: url('../fonts/Prospac.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --bs-font-body: "Mulish", sans-serif;
-  --bs-font-heading: "Chakra Petch", sans-serif;
+  --bs-font-heading: "Raleway", sans-serif;
+  --bs-font-heading2: "Prospac", sans-serif;
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -526,8 +537,8 @@ mark {
   font-family: var(--bs-font-heading);
   -webkit-transition: var(--bs-transition);
   transition: var(--bs-transition);
-  -webkit-clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);
-          clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);
+  /* -webkit-clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);
+          clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px); */
 }
 
 .btn-primary {
@@ -536,7 +547,7 @@ mark {
 }
 
 .btn:before {
-  top: 0;
+  /* top: 0;
   left: -5%;
   z-index: -1;
   right: auto;
@@ -553,7 +564,7 @@ mark {
           transform-origin: left bottom;
   background-color: var(--bs-white);
   -webkit-transform: skewY(-10deg) scale(1, 0);
-          transform: skewY(-10deg) scale(1, 0);
+          transform: skewY(-10deg) scale(1, 0); */
 }
 .btn:hover {
   color: var(--bs-dark);
@@ -2176,6 +2187,7 @@ blockquote .quote_content {
 }
 .hero_section .hero_title {
   font-size: 66px;
+  font-family: var(--bs-font-heading2) !important;
   line-height: 73px;
   margin-bottom: 20px;
 }
